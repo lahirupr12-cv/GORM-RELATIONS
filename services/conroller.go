@@ -6,5 +6,5 @@ import (
 )
 
 func Create() {
-	config.DB.Create(&models.Dog{Name: "dog1", Toys: []models.Toy{{Name: "toy1"}, {Name: "toy2"}}})
+	config.DB.Create(&models.Dog{Name: "dog1", Toys: models.Toy{Name: "toy2"}})
 }
