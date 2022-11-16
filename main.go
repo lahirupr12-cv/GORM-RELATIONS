@@ -7,5 +7,8 @@ import (
 
 func main() {
 	config.ConnectionDB()
-	services.Create()
+	// services.Create()
+	// services.CreateTable()
+	// services.CreateUser()
+	services.CreateCategory()
 }

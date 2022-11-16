@@ -22,8 +22,12 @@ func ConnectionDB() {
 	// db.Migrator().DropTable(&models.Primitive{})
 	// db.Migrator().DropTable(&models.Field{})
 
-	db.AutoMigrate(&models.Dog{})
-	db.AutoMigrate(&models.Toy{})
+	// db.AutoMigrate(&models.Town{})
+	// db.AutoMigrate(&models.Place{})
+
+	// db.AutoMigrate(&models.Dog{})
+	// db.AutoMigrate(&models.Toy{})
+	db.AutoMigrate(&models.Category{})
 
 	DB = db
 	// return db
