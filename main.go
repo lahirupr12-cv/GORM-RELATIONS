@@ -11,4 +11,5 @@ func main() {
 	// services.CreateTable()
 	// services.CreateUser()
 	services.CreateCategory()
+	services.CreatePrimitives()
 }

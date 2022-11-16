@@ -28,6 +28,7 @@ func ConnectionDB() {
 	// db.AutoMigrate(&models.Dog{})
 	// db.AutoMigrate(&models.Toy{})
 	db.AutoMigrate(&models.Category{})
+	db.AutoMigrate(&models.Primitive{})
 
 	DB = db
 	// return db
