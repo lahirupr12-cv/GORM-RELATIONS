@@ -35,12 +35,12 @@ func CreateTable() {
 	config.DB.Create(&p3)
 }
 
-func CreateUser() {
-	// towns := models.Town{}
-	// data := config.DB.Where("id=?", 0).Find(towns)
-	// // p3 := models.Place{
-	// // 	Name: "Secundarabad",
-	// // 	Town: data.GenerateModel("users"),
-	// // }
-	// fmt.Println(data)
-}
+// func CreateUser() {
+// 	// towns := models.Town{}
+// 	// data := config.DB.Where("id=?", 0).Find(towns)
+// 	// // p3 := models.Place{
+// 	// // 	Name: "Secundarabad",
+// 	// // 	Town: data.GenerateModel("users"),
+// 	// // }
+// 	// fmt.Println(data)
+// }

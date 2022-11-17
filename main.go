@@ -7,9 +7,15 @@ import (
 
 func main() {
 	config.ConnectionDB()
-	// services.Create()
-	// services.CreateTable()
-	// services.CreateUser()
-	services.CreateCategory()
-	services.CreatePrimitives()
+	// // services.Create()
+	// // services.CreateTable()
+	// // services.CreateUser()
+	// services.CreateCategory()
+	// services.CreatePrimitives()
+
+	// services.CreditCard()
+	// services.CreateUsers()
+
+	services.CreateLanguage()
+
 }

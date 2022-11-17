@@ -2,7 +2,7 @@ package config
 
 import (
 	"test/Utils"
-	"test/models"
+	manytomany "test/models/ManyToMany"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -18,17 +18,11 @@ func ConnectionDB() {
 	//call checkError method to check wether thers error
 	Utils.CheckError(err)
 
-	//drop table if table already exists
-	// db.Migrator().DropTable(&models.Primitive{})
-	// db.Migrator().DropTable(&models.Field{})
+	db.AutoMigrate(&manytomany.Language{})
+	db.AutoMigrate(&manytomany.User{})
+	db.AutoMigrate(&manytomany.UserLanguages{})
 
-	// db.AutoMigrate(&models.Town{})
-	// db.AutoMigrate(&models.Place{})
-
-	// db.AutoMigrate(&models.Dog{})
-	// db.AutoMigrate(&models.Toy{})
-	db.AutoMigrate(&models.Category{})
-	db.AutoMigrate(&models.Primitive{})
+	// db.Table("worker_recipes").AddForeignKey("worker_id", "workers(id)", "RESTRICT", "CASCADE")
 
 	DB = db
 	// return db
